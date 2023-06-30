@@ -1,11 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-
+require("dotenv").config();
 //set up express app
 const app = express();
-mongoose.connect("mongodb://127.0.0.1/ninjago");
-
+mongoose.connect(process.env.MONG_URI);
+//mongodb://127.0.0.1/helper
 mongoose.Promise = global.Promise;
 
 app.use(express.static("public"));
@@ -23,11 +23,11 @@ app.use((err ,req,res,next)=>{
 })
 
 
-app.get("/" , (req , res)=>{
-    res.send({name:"Shashwat"})
-    console.log("get request")
+// app.get("/" , (req , res)=>{
+//     res.send({name:"Shashwat"})
+//     console.log("get request")
 
-});
+// });
 
 
 

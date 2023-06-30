@@ -1,7 +1,7 @@
 body {
     font-family: Raleway;
     color: #555;
-    background: #ff5252;
+    background: #9AC5F4;
     margin: 10px 30px;
 }
 
@@ -9,7 +9,7 @@ body {
     max-width: 800px;
     margin: 60px auto;
     padding: 10px 20px;
-    background: #fdfdfd;
+    background: #ECF8F9;
     border-radius: 4px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
 }

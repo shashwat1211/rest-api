@@ -13,7 +13,7 @@ const GeoSchema =new Schema({
 });
 
 // Create a schema for the user model, which will be used to create and store users in our database:
-const NinjaSchema = new Schema({
+const EmployeeSchema = new Schema({
     name:{
         type:String,
         required:[true,"Name field is required"]
@@ -29,5 +29,5 @@ const NinjaSchema = new Schema({
     geometry:GeoSchema
 });
 
-const Ninja = mongoose.model('ninja' , NinjaSchema);
-module.exports=Ninja;
+const Employee = mongoose.model('employee' , EmployeeSchema);
+module.exports = Employee;
